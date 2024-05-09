@@ -17,7 +17,7 @@ My strength is being able to use creative and flexible thinking in any difficult
 > Data Structure, Algorithm, PS, Automata, System programming, Computer Architecture
 
 ## Certification
-Computer Specialist in Spreadsheet & Database Level-2
+Computer Specialist in Spreadsheet & Database Level-2\
 TOEIC : 900+
 
 ## Contact
