@@ -4,7 +4,7 @@ name: test
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   schedule:
-  - cron: "0 5,15 * * 1-5"
+  - cron: "45 * * * 1-5"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -33,3 +33,9 @@ jobs:
 
       - name: Run main.py
         run: python main.py
+
+      - name: Git commit and push
+        run:
+          git add test.txt
+          git commit -m "Update test.txt"
+          git push
