@@ -12,9 +12,12 @@ I like drawing some natural or artificial things. By drawing complex structures,
 > C, C++, Python, Java, OCaml
 
 ## Education
-3rd year, Software Department, Sungkyunkwan University
+- B.S. Software Department, Sungkyunkwan University (2020 ~ )
 ### I have taken...
-> Data Structure, Algorithm, PS, Automata, System programming, Computer Architecture
+#### Major
+  > Data Structure, Algorithm, PS, Automata, System programming, Computer Architecture
+#### BSM
+  > Discrete Mathematics, Probability and Statistics, Calculus I, Linear Algebra
 
 ## Certification
 Computer Specialist in Spreadsheet & Database Level-2\
