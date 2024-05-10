@@ -14,5 +14,5 @@ kospi = get_kospi()
 current_date = datetime.datetime.now().strftime('%Y-%m-%d')
 record = f"{current_date} : {kospi}"
 
-with open("whqhdtq12346.github.io/test.txt", "a") as file:
+with open("test.txt", "a") as file:
     file.write(record + "\n")
