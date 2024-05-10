@@ -2,7 +2,7 @@ name: Chess.com Games & Stats
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '20 * * * *'
 
 jobs:
   update:
