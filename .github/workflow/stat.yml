@@ -1,7 +1,20 @@
 name: Chess.com Games & Stats
-uses: Balastrong/chess-stats-action@v2.0.1
-with:  
-  # Your Chess.com username
-  CHESS_USERNAME: "white_paper_law" # default is hikaru
-  # Define a specific file in your repo
-  FILE_NAME: "CHESS.md" # optional, default is README.md
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run Chess.com Games & Stats
+      uses: Balastrong/chess-stats-action@v2.0.1
+      with:  
+        # Your Chess.com username
+        CHESS_USERNAME: "white_paper_law" # default is hikaru
+        # Define a specific file in your repo
+        FILE_NAME: "CHESS.md" # optional, default is README.md
