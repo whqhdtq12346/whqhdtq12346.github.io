@@ -1,18 +1,22 @@
 import requests
 from bs4 import BeautifulSoup
-import datetime
+from datetime import datetime
 
 def get_kospi():
     url = "https://finance.naver.com/sise/sise_index.nhn?code=KOSPI"
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    kospi = soup.select_one("#now_value").text
+    kospi = soup.select_one('#now_value').text
     return kospi
 
-kospi = get_kospi()
-current_date = datetime.datetime.now().strftime('%Y-%m-%d')
-record = f"{current_date} : {kospi}"
+def write_to_file(kospi):
+    with open('test.txt', 'a') as f:
+        now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        f.write(f'{now}: {kospi}\n')
 
-with open("test.txt", "a") as file:
-    file.write(record + "\n")
+def main():
+    kospi = get_kospi()
+    write_to_file(kospi)
+
+main()
